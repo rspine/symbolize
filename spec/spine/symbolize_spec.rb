@@ -13,7 +13,7 @@ module Spine
     end
 
     describe 'when hash is nested' do
-      let(:convertable) { { 'test' => { "nested_test": 1 } } }
+      let(:convertable) { { 'test' => { "nested_test" => 1 } } }
 
       it 'symbolizes keys' do
         result = Symbolize.keys(convertable)
